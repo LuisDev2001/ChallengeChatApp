@@ -44,7 +44,8 @@ body {
   border: 10px solid #ffffff;
   border-radius: 30px;
   overflow: hidden;
-  box-shadow: 0 0 10px 3px rgba(53, 53, 53, 0.3);
+  background: #f5f3f8;
+  box-shadow: 0 0 20px 20px rgba(53, 53, 53, 0.3);
 }
 /*Header chat styles*/
 .mobile-header {
@@ -59,6 +60,8 @@ body {
   justify-content: space-around;
   padding: 30px 10px 10px;
   position: relative;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 8px 5px rgba(53, 53, 53, 0.3);
 }
 .mobile-header::before {
   content: "";
@@ -101,4 +104,134 @@ body {
 .mobile-header__info-available {
   font-size: 13px;
   color: #db78ff;
+}
+/*Chat styles*/
+.chat {
+  padding: 20px 15px 15px;
+  background: #f5f3f8;
+  display: flex;
+  flex-direction: column;
+}
+.chat-left,
+.chat-right {
+  font-size: 12px;
+  max-width: 180px;
+  min-width: 100px;
+  display: inline-block;
+  margin: 0 0 12px 0;
+  padding: 10px;
+}
+.chat-left {
+  background: #ede4f5;
+  color: #ab88be;
+  align-self: flex-start;
+  border-radius: 15px 15px 15px 5px;
+}
+.chat-right {
+  background: #ffffff;
+  color: #827f88;
+  align-self: flex-end;
+  border-radius: 15px 15px 5px 15px;
+  box-shadow: 0 5px 5px rgba(53, 53, 53, 0.2);
+}
+.chat-right.img {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chat-right.img img {
+  width: 50px;
+  border-radius: 10px;
+  margin: 0 8px 0 0;
+}
+.chat-right.img img:last-child {
+  margin: 0;
+}
+/*Styles for choose options*/
+.chat-options-payment {
+  padding: 13px;
+  max-width: 220px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  margin: 0 0 10px 0;
+  border-radius: 15px 15px 15px 5px;
+}
+.chat-options-payment__time span,
+.chat-options-payment__price span {
+  color: #ffffff;
+}
+.chat-options-payment__time span {
+  font-size: 12px;
+  font-weight: 400;
+}
+.chat-options-payment__price span {
+  font-size: 16px;
+  font-weight: 700;
+}
+/*Styles for input send message*/
+.chat-send-message__form {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0 0 0;
+}
+.chat-send-message__form > div {
+  position: relative;
+}
+.chat-send-message__form div input {
+  outline: none;
+  height: 40px;
+  padding: 10px;
+  background: #ffffff;
+  box-shadow: 0 0 3px rgba(53, 53, 53, 0.2);
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  border: 1px solid #f4f4f6;
+  font-size: 13px;
+}
+.chat-send-message__form div input::placeholder {
+  font-size: 12px;
+}
+.chat-send-message__form .icon-send {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  height: 100%;
+  width: 35px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: #000000;
+  border-radius: 50%;
+}
+.chat-send-message__form .icon-send i {
+  font-size: 15px;
+  color: #ffffff;
+}
+/*Styles for section text*/
+.app-text {
+  max-width: 360px;
+  margin: 70px auto;
+  padding: 0 15px;
+  text-align: center;
+}
+.app-text h2 {
+  font-size: 40px;
+  margin: 0 0 10px 0;
+  color: #372548;
+}
+.app-text p {
+  color: #c0bbc4;
+  line-height: 1.5;
 }
