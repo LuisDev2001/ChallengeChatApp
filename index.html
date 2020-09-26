@@ -19,13 +19,18 @@
         <section class="app-chat">
           <div class="mobile">
             <div class="mobile-header">
-              <span class="mobile-header__icon-return"></span>
+              <div class="mobile-header__icon-return">
+                <i class="fas fa-chevron-left"></i>
+              </div>
               <div class="mobile-header_unser-info">
                 <span class="mobile-header__avatar"></span>
                 <div class="mobile-header__info">
                   <p class="mobile-header__info-name">Samuel Green</p>
                   <p class="mobile-header__info-available">Available to Walk</p>
                 </div>
+              </div>
+              <div class="mobile-header__more-options">
+                <i class="fas fa-ellipsis-v"></i>
               </div>
             </div>
             <section class="chat">
@@ -70,7 +75,9 @@
                 <form action="" class="chat-send-message__form">
                   <div>
                     <input type="text" placeholder="Type a message" />
-                    <span class="icon-send"></span>
+                    <button class="icon-send">
+                      <i class="fas fa-chevron-circle-right"></i>
+                    </button>
                   </div>
                 </form>
               </section>
@@ -88,5 +95,10 @@
         </section>
       </div>
     </main>
+    <!-- script for icon -->
+    <script
+      src="https://kit.fontawesome.com/b7301c403c.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
