@@ -8,4 +8,97 @@ body {
   font-size: 16px;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
+  position: relative;
+  background: #fafafa;
+}
+/*Secure space*/
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.bg-color.mobile {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  z-index: 10;
+  width: 50%;
+  height: 600px;
+  background: linear-gradient(hsl(293, 100%, 63%) 20%, hsl(264, 100%, 61%) 70%);
+  border-radius: 0 0 200px 0;
+}
+
+.main {
+  position: relative;
+  z-index: 99;
+}
+
+.app-chat {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 30px 0 0 0;
+}
+
+.app-chat .mobile {
+  width: 100%;
+  border: 10px solid #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 3px rgba(53, 53, 53, 0.3);
+}
+/*Header chat styles*/
+.mobile-header {
+  background: linear-gradient(
+    to left,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 10px 10px;
+  position: relative;
+}
+.mobile-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+  height: 20px;
+  border-radius: 0 0 50px 50px;
+  background: #ffffff;
+}
+.mobile-header__icon-return,
+.mobile-header__more-options {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+}
+.mobile-header_unser-info {
+  display: inline-flex;
+  align-items: center;
+}
+.mobile-header__avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: block;
+  border: 1px solid #ffffff;
+  background-image: url(../assets/img/avatar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 5px 0 0;
+}
+.mobile-header__info-name {
+  color: #ffffff;
+  font-size: 14px;
+}
+.mobile-header__info-available {
+  font-size: 13px;
+  color: #db78ff;
 }
