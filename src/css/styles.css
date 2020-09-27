@@ -10,10 +10,6 @@ body {
   font-weight: 400;
   position: relative;
   background: #fafafa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
 }
 .bg-color.mobile {
   position: absolute;
@@ -69,8 +65,8 @@ body {
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 30px 10px 10px;
+  justify-content: space-between;
+  padding: 30px 15px 10px;
   position: relative;
   border-radius: 0 0 20px 20px;
   box-shadow: 0 0 8px 5px rgba(53, 53, 53, 0.3);
@@ -92,6 +88,10 @@ body {
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
+  cursor: pointer;
+}
+.mobile-header__icon-return {
+  margin: 0 6px 0 0;
 }
 .mobile-header_unser-info {
   display: inline-flex;
@@ -257,6 +257,12 @@ body {
 }
 /*DESKTOP*/
 @media screen and (min-width: 992px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
   .bg-color.mobile,
   .bg-color-two.mobile {
     width: 25%;
@@ -279,6 +285,7 @@ body {
   .app-chat {
     margin: 0;
     padding: 0;
+    transform: scale(0.9);
   }
   .app-text {
     max-width: 300px;
@@ -294,5 +301,9 @@ body {
 @media screen and (min-width: 1200px) {
   .main .wrapper {
     max-width: 1000px;
+  }
+  .bg-color.mobile,
+  .bg-color-two.mobile {
+    width: 40%;
   }
 }
